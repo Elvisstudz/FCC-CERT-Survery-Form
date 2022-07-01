@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>
+    Survey Form
+  </title>
+</head>
+<body>
+  <h1 id="title">Customer Survey</h1>
+  <p id=description>Please let us know know what you think of us!
+  <form id="survey-form">
+    <label id="name-label">
+      Name: <input type="text" placeholder="enter name" id="name" required />    </label>
+      <br>
+      <label id="email-label">Email: <input type="email" id="email" placeholder="enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required /></label>
+      <br>
+       <label id="number-label">Age: <input type="number" placeholder="age" id="number" min="13" max="120"/></label>
+       <label>
+         <br>
+         How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">From a friend</option>
+            <option value="2">Internet search</option>
+          </select>
+        </label>
+        <br>
+        <p>Would you recommend us?</p>
+        <label><input value="name1" name="name" type="radio" id="name1" class="inline" /> Yes</label>
+        <label><input value="name2" name="name" type="radio" id="name2" class="inline" /> No</label>
+        <br>
+        <p>What do you want to see changed?</p>
+        <label>
+          <input type="checkbox" value="Better" id="more1" class="inline" required /> Better visuals
+			  </label>
+        <br>
+        <label>
+          <input type="checkbox" value="More" id="more2" class="inline" required /> More content
+			  </label>
+        <br>
+        <label>
+          <input type="checkbox" value="Faster" id="more3" class="inline" required /> Faster access
+			  </label>
+        <br>
+        Comments:<label>
+        
+          <textarea id="comments" rows="3" cols="30" placeholder="I like/dislike..."></textarea>
+			  </label>
+        <br>
+      <input type="submit" id="submit" value="Submit" />
+  </form>
+</body>
+</hmtl>
